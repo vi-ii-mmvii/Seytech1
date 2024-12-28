@@ -1,0 +1,48 @@
+
+:root{  
+    --light-color: #f4f4f4;  
+}
+
+ 
+h3 { 
+    margin: 20px; 
+    font-size: 1.8em; 
+    font-weight: bold; 
+} 
+ 
+/* Сетка */ 
+.grid-container { 
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 0; /*Убираем зазор */ 
+    width: 100%; 
+} 
+ 
+.grid-item { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    background-color: var(--light-color); 
+} 
+ 
+/* Текстовые блоки */ 
+.onlytext{
+    padding: 15%;
+    text-align: left; 
+}
+
+.onlytext p{ 
+font-size: 1em; 
+line-height: 1.5; 
+} 
+
+/* Изображения */ 
+.image img { 
+    width: 100%; 
+    height: 100%; 
+}
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
