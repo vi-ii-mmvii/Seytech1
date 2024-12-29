@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* font for all */
+body { 
+    font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+}
+
 
 :root{  
     --light-color: #f4f4f4;  
@@ -46,3 +54,65 @@ line-height: 1.5;
         grid-template-columns: 1fr;
     }
 }
+
+.box{
+    height: 100px;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 33.33%;
+    float: left;
+    height: 400px; 
+    text-align: center;
+    position: relative;
+}
+.ironman,
+    .kid,
+    .cat { 
+        background-color: #f8f9fa;
+    }
+@media (max-width: 768px) {
+    .ironman,
+    .kid,
+    .cat {
+        width: 100%;
+    }
+}
+
+/* Вообще все (контейнер)*/ 
+.Threepersons_all{ 
+    padding: 0px; 
+    margin: 0px; 
+    background-color: #f8f9fa; 
+    padding-top: 70px; 
+    padding-bottom: 360px; 
+} 
+/* Надпись сверху */ 
+.Threepersons_headline{ 
+    text-align: center; 
+    margin-bottom: 3rem !important; 
+    font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+    font-weight: 700; 
+    font-size: 2rem; 
+    line-height: 1.2; 
+} 
+/* Общие настройки для фоток */ 
+.threepersons_photo{ 
+    border-radius: 50%; 
+    object-fit: cover; 
+    box-shadow: 0 5px 5px 0 #adb5bd;
+} 
+/*  */ 
+.threepersons_names{ 
+    font-size: 1.25rem; 
+    font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+    font-weight: 700; 
+} 
+/* Текст для отзывов */ 
+.threepersons_text{ 
+    font-weight: 300; 
+    font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+} 
+/* Железный человек сьежает без этого */ 
+.invisable{ 
+    color: white; 
+} 
