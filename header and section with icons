@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>Document</title> 
+   <link rel="stylesheet" href="style.css"/> 
+</head> 
+<body>
+    <!-- Лиза -->
+<!--   nav-->
+    
+        <nav> 
+            <div class="block-nav">
+            <p class="name-group">
+                Smeshariki
+            </p> 
+            <div class="hyperlink"> 
+                <a href="site.html" class="hyper">Sign In</a> 
+            </div> 
+            </div>
+        </nav> 
+<!-- the background image with text -->
+        <div class="block1"> 
+            <div class="darking"></div>
+            <div class="fortext">
+            <h1 class="textinblock">Build a landing page for your business or project and generate more leads!</h1> 
+            <form action=""> 
+                <input class="textblock" name="email" placeholder="Enter your email..." type="email" required> 
+                <button class="hyper-inblock" type="submit">Sign up!</button> 
+            </form>
+        </div> 
+        </div> 
+
+   
+<!-- section with icons -->
+    <section id="icons">
+        <div class="block2"> 
+            <div class="innerblock"> 
+                <div class="icons"> 
+                  <img class="icon" src="https://i.postimg.cc/QMrRsJvD/monitor.png" alt="monitor">              
+                    <h4 class="undericon">Fully Responsive</h4> 
+                    <p>This theme will look great on any <br>device, no matter the size!</p> 
+                </div> 
+                <div class="icons"> 
+                    <img class="icon" src="https://i.postimg.cc/mZm3s3tH/stacks.png" alt="layers"> 
+                    <h4 class="undericon">Production Ready</h4> 
+                    <p>Featuring the latest build for <br>Production</p> 
+                </div> 
+                <div class="icons"> 
+                    <img class="icon"  src="https://i.postimg.cc/Kv0XPTKr/checkmark.png" alt="checkmark"> 
+                    <h4 class="undericon">Easy to Use</h4> 
+                    <p>Ready to use with your own content, <br> or customize the source files!</p> 
+                </div> 
+            </div> 
+        </div>
+      </section>
