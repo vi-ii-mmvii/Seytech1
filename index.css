@@ -184,3 +184,15 @@ img.icon:hover {
   font-weight: lighter;
   line-height: 1.25;
 }
+/*footer*/ 
+.block3{  
+    background-image: url(https://learn.seytech.co/assets/projects/html-css/projects/3-landing/img/bg-masthead.jpg);  
+    background-position: center; 
+    height: 40vh;  
+    background-size: cover;  
+    text-align: center!important;  
+}  
+.fortext2{ 
+    position: relative;  
+    top: 30%;  
+}
