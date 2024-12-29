@@ -185,14 +185,27 @@ img.icon:hover {
   line-height: 1.25;
 }
 /*footer*/ 
-.block3{  
-    background-image: url(https://learn.seytech.co/assets/projects/html-css/projects/3-landing/img/bg-masthead.jpg);  
-    background-position: center; 
-    height: 40vh;  
-    background-size: cover;  
-    text-align: center!important;  
-}  
-.fortext2{ 
-    position: relative;  
-    top: 30%;  
+.footer-text {
+  color: #666; 
 }
+
+.footer-social {
+float:right;
+text-align: center;
+}
+.textblock{
+padding: 12px 10%; 
+}
+@media (max-width: 768px) {
+  .innerblock {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  /* For mobile phones: */
+  header, #icons, float-text-photo, .feedback, footer{
+    width: 100%;
+  }
