@@ -6,6 +6,100 @@ body {
     font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
 }
 
+ /* sections with icons */
+  
+ #icons {
+    background-color: #f8f9fa;
+    padding: 100px;
+  }
+  
+  .innerblock {
+    display: flex;
+    justify-content: center; /* сenter the icons horizontally */
+    flex-wrap: wrap; 
+    gap: 10%; /* spacing between icons */
+    text-align: center;
+    position: relative center;
+    max-width: 1200px; 
+  }
+  
+  .icons {
+    display:inline-block; 
+    max-width: 25%;
+    margin-right: -55px;
+  }
+  
+  img.icon {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    /*additional*/
+  transition: transform 0.3s ease, opacity 0.3s ease; /* smooth hover effect */
+  
+  }
+  
+  img.icon:hover {
+    transform: scale(1.1); /* a little bit large img on hover */
+    opacity: 0.8; /* чуть прозрачность */
+  }
+  
+  .undericon {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .icons p {
+    font-size: 0.9rem;
+    color: #303030  ; 
+    font-weight: lighter;
+    line-height: 1.25;
+  }
+
+   /* For mobile phones: */
+   @media only screen and (max-width: 786px) {
+    body {
+          margin: 0;
+          padding: 0;
+          width: 100%;
+      }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+  }
+    .block-nav {
+      text-align: center;
+      
+      
+    }
+    
+    .block1 {
+      height: auto;
+      padding: 20px 10px;
+    }
+    
+    .textinblock {
+      font-size: 1.5rem;
+      padding: 5%;
+    }
+    
+    .icons {
+      max-width: 100%;
+      margin: 20px 0;
+    }
+    
+    
+    .footer-text {
+      font-size: 12px;
+      text-align: center;
+    }
+    
+    .links {
+      text-align: center;
+    }
+
 
 :root{  
     --light-color: #f4f4f4;  
