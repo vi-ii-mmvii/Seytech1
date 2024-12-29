@@ -138,7 +138,7 @@ nav{
 /* sections with icons */
 
 #icons {
-  background-color:;
+  background-color: #fff;
   padding: 100px;
 }
 
@@ -209,3 +209,4 @@ padding: 12px 10%;
   header, #icons, float-text-photo, .feedback, footer{
     width: 100%;
   }
+}

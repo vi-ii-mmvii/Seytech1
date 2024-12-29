@@ -32,12 +32,11 @@ body {
     border: 5px solid; 
     border-color: rgba(220, 202, 202, 0);
     color:white;
-    position: absolute; 
     z-index: 2; 
     padding: 7px 10px; 
     border-radius: 5px; 
     text-decoration: none;
-    margin-top: -5px; 
+    margin-left: 5px;
     
   }
   .hyper:hover{ 
@@ -52,13 +51,26 @@ body {
     margin-left: 15%; 
     margin-bottom: 3%; 
     font-size: 20px; 
+    font-size: 1.25rem;
   } 
   
   .hyperlink{ 
     align-items: flex-end;
-    margin-right: 15%;
+    margin-right: 5%;
     margin-bottom: 3%;
+    margin-top: 5%;
+    font-size: 1.25rem;
+    border: #056ad7;
   } 
+  @media screen (min-width: 786px) {
+    .name-group{
+      margin-left: 5%;
+    }
+
+    .hyperlink{
+      margin-right: 15%;
+    }
+  }
   
   .email{
     display: grid;
@@ -137,13 +149,6 @@ body {
   #forminblock{
     flex-direction: row;
   }
-  /* .textblock{ 
-    padding: 12px  150px; 
-    border-radius: 7px; 
-    border-color: white;
-    font-size: 18px; 
-    margin-right: 10px;
-  } */
 
   .inblock{
     padding: 12px 25px;
@@ -354,3 +359,76 @@ line-height: 1.5;
 .invisable{ 
     color: white; 
 } 
+
+.block3{
+  position: relative;
+    background-color: #343a40;
+    background: url(https://learn.seytech.co/assets/projects/html-css/projects/3-landing/img/bg-masthead.jpg) center; 
+    background-size: cover; 
+    height: 45vh;
+    text-align: center;
+    width: 100%;
+    
+}
+@media screen and (max-width: 786px) {
+  .block3{
+    margin-top: 800px;
+  }
+}
+.email2{
+  display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin-right: 7%;
+    margin-left: 7%;
+    margin-top: -10%;
+}
+
+@media screen and (min-width: 768px) {
+  .email2{
+      margin-left: 20%;
+      margin-right: 20%;
+      margin-top: -7%;
+      padding-bottom: 100px;
+  }
+}
+#footer{
+  display: grid;
+  grid-template-columns: 1fr  1fr;
+}
+.decornone{
+  text-decoration: none;
+  margin-right: 1%;
+}
+@media screen and (max-width:786px) {
+  .decornone {
+    font-size: 13px;
+  }
+}
+.decornone:hover {
+  border-bottom: #056ad7 solid 1px;}
+.footer-social{
+  display: inline-block;
+  margin-right: -70%;
+  margin-top: 5%;
+}
+@media screen and (max-width: 786px) {
+  .footer-social {
+    display: inline-block;
+  margin-right: -65%;
+  margin-top: 5%;
+  }
+}
+.footer-text{
+  display: inline-block;
+}
+
+.about {
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+@media screen and (min-width:786px) {
+  .about {
+    width: 350px;
+  }
+}
