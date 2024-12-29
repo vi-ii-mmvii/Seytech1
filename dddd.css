@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* font for all */
+body { 
+    font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+}
+
+  /* nav*/
+  nav{ 
+    margin: 10px; 
+    padding-bottom: 5vh; 
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between; /* Раздвигает логотип и кнопку */
+    align-items: center; /* Выравнивание по вертикали */
+    padding: 10px 20px;
+  }  
+  .block-nav {
+    display: flex;
+  }
+  .container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .hyper{ 
+    background-color: rgb(0, 123, 255); 
+    border: 5px solid; 
+    border-color: rgba(220, 202, 202, 0);
+    color:white;
+    position: absolute; 
+    z-index: 2; 
+    padding: 7px 10px; 
+    border-radius: 5px; 
+    text-decoration: none;
+    margin-top: -5px; 
+    
+  }
+  .hyper:hover{ 
+    background-color: #056ad7; 
+  } 
+  .hyper:active{ 
+    border: 5px solid rgba(98, 165, 243, 0.484); 
+  } 
+ 
+  .name-group{ 
+    align-items: flex-start; 
+    margin-left: 15%; 
+    margin-bottom: 3%; 
+    font-size: 20px; 
+  } 
+  
+  .hyperlink{ 
+    align-items: flex-end;
+    margin-right: 15%;
+    margin-bottom: 3%;
+  } 
+  
+  .email{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin-right: 7%;
+    margin-left: 7%;
+    margin-top: -10%;
+  }
+
+  @media screen and (min-width: 768px) {
+    .email{
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: -7%;
+        padding-bottom: 100px;
+    }
+  }
+  /* the background image with text */
+  .block1{
+    position: relative;
+    background-color: #343a40;
+    background: url(https://learn.seytech.co/assets/projects/html-css/projects/3-landing/img/bg-masthead.jpg) center; 
+    background-size: cover; 
+    height: 60vh;
+    text-align: center;
+    width: 100%; 
+  }
+  .darking{
+    position: absolute;
+    background-color: hwb(213 20% 76%);
+    height: 100%;
+    width: 100%;
+    top:0;
+    left: 0;
+    opacity: .3;
+  }
+  .hyper-inblock{
+    background-color: rgb(0, 123, 255); 
+    border: 5px solid; 
+    border-color: rgba(220, 202, 202, 0);
+    color:white;
+    z-index: 2; 
+    padding: 5%; 
+    border-radius: 5px; 
+    text-decoration: none;
+    font-size: 15px;
+    margin-left: 5px;
+  }
+  
+  /* adaptive*/
+  @media (min-width: 768px) {
+    .block1{
+        padding-top:12vh;
+        padding-bottom:12vh;
+    }
+  
+    .block1 h1 {
+        font-size: 3.5rem;
+    }
+  }
+  
+  
+  
+  .fortext{
+    position: relative; 
+    top:15%; 
+  }
+  
+  .textinblock{ 
+    color: white; 
+    font-weight: 700; 
+    font-size: 50px; 
+    padding: 0% 13% 0% 13%; 
+    margin-bottom: 50px; 
+  } 
+  #forminblock{
+    flex-direction: row;
+  }
+  /* .textblock{ 
+    padding: 12px  150px; 
+    border-radius: 7px; 
+    border-color: white;
+    font-size: 18px; 
+    margin-right: 10px;
+  } */
+
+  .inblock{
+    padding: 12px 25px;
+  }
+  
+
+ /* sections with icons */
+  
+ #icons {
+    background-color: #f8f9fa;
+    padding: 100px;
+  }
+  
+  .innerblock {
+    display: flex;
+    justify-content: center; /* сenter the icons horizontally */
+    flex-wrap: wrap; 
+    gap: 10%; /* spacing between icons */
+    text-align: center;
+    position: relative center;
+    max-width: 1200px; 
+  }
+  
+  .icons {
+    display:inline-block; 
+    max-width: 25%;
+    margin-right: -55px;
+  }
+  
+  img.icon {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    /*additional*/
+  transition: transform 0.3s ease, opacity 0.3s ease; /* smooth hover effect */
+  
+  }
+  
+  img.icon:hover {
+    transform: scale(1.1); /* a little bit large img on hover */
+    opacity: 0.8; /* чуть прозрачность */
+  }
+  
+  .undericon {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .icons p {
+    font-size: 0.9rem;
+    color: #303030  ; 
+    font-weight: lighter;
+    line-height: 1.25;
+  }
+
+   /* For mobile phones: */
+   @media only screen and (max-width: 786px) {
+    body {
+          margin: 0;
+          padding: 0;
+          width: 100%;
+      }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+  }
+    .block-nav {
+      text-align: center;
+      
+      
+    }
+    
+    .block1 {
+      height: auto;
+      padding: 20px 10px;
+    }
+    
+    .textinblock {
+      font-size: 1.5rem;
+      padding: 5%;
+    }
+    
+    .icons {
+      max-width: 100%;
+      margin: 20px 0;
+    }
+    
+    
+    .footer-text {
+      font-size: 12px;
+      text-align: center;
+    }
+    
+    .links {
+      text-align: center;
+    }
+
+
+:root{  
+    --light-color: #f4f4f4;  
+}
+
+ 
+h3 { 
+    margin: 20px; 
+    font-size: 1.8em; 
+    font-weight: bold; 
+} 
+ 
+/* Сетка */ 
+.grid-container { 
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 0; /*Убираем зазор */ 
+    width: 100%; 
+} 
+ 
+.grid-item { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    background-color: var(--light-color); 
+} 
+ 
+/* Текстовые блоки */ 
+.onlytext{
+    padding: 15%;
+    text-align: left; 
+}
+
+.onlytext p{ 
+font-size: 1em; 
+line-height: 1.5; 
+} 
+
+/* Изображения */ 
+.image img { 
+    width: 100%; 
+    height: 100%; 
+}
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.box{
+    height: 100px;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 33.33%;
+    float: left;
+    height: 400px; 
+    text-align: center;
+    position: relative;
+}
+.ironman,
+    .kid,
+    .cat { 
+        background-color: #f8f9fa;
+    }
+@media (max-width: 768px) {
+    .ironman,
+    .kid,
+    .cat {
+        width: 100%;
+    }
+}
+
+/* Вообще все (контейнер)*/ 
+.Threepersons_all{ 
+    padding: 0px; 
+    margin: 0px; 
+    background-color: #f8f9fa; 
+    padding-top: 70px; 
+    padding-bottom: 360px; 
+} 
+/* Надпись сверху */ 
+.Threepersons_headline{ 
+    text-align: center; 
+    margin-bottom: 3rem !important; 
+    font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+    font-weight: 700; 
+    font-size: 2rem; 
+    line-height: 1.2; 
+} 
+/* Общие настройки для фоток */ 
+.threepersons_photo{ 
+    border-radius: 50%; 
+    object-fit: cover; 
+    box-shadow: 0 5px 5px 0 #adb5bd;
+} 
+/*  */ 
+.threepersons_names{ 
+    font-size: 1.25rem; 
+    font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+    font-weight: 700; 
+} 
+/* Текст для отзывов */ 
+.threepersons_text{ 
+    font-weight: 300; 
+    font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+} 
+/* Железный человек сьежает без этого */ 
+.invisable{ 
+    color: white; 
+} 
